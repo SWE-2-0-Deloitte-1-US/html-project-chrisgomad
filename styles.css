@@ -1,0 +1,159 @@
+#home {
+    max-width: 100%;
+    overflow: hidden; /* Prevents horizontal scrollbar if the image overflows */
+    position: relative;
+}
+
+.home-image {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #001F3F;
+    color: #FFFFFF;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    overflow: hidden;
+}
+
+#home-nav {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #39CCCC;
+    color: #001F3F;
+}
+
+#home-page-section {
+
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 70px; /* Adjusted margin to prevent content overlap with the fixed header */
+}
+
+#home-page-section blockquote {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+}
+
+#bio, #projects, #contact {
+    padding: 80px 0;
+}
+
+#bio h2, #projects h2, #contact h2 {
+    color: #001F3F;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+aside {
+    background-color: #DDDDDD;
+    padding: 20px;
+}
+
+aside h3 {
+    color: #001F3F;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #001F3F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+.home-image {
+    width: 100%;
+    max-height: 400px; /* Adjust the value based on your preference */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.hero-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-caption h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-caption p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF4136;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.hero-btn:hover {
+    background-color: #39CCCC;
+    color: #001F3F;
+}
