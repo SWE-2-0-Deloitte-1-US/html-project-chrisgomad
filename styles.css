@@ -1,0 +1,264 @@
+#home {
+    overflow: hidden; /* Prevents horizontal scrollbar if the image overflows */
+    position: relative;
+}
+
+.home-image {
+    max-width: 100%;
+    width: 100%;
+    max-height: auto;
+    height: auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #001F3F;
+    color: #FFFFFF;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    overflow: hidden;
+}
+
+#home-nav {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #39CCCC;
+    color: #001F3F;
+}
+
+#home-page-section {
+    position: relative;
+}
+
+#bio {
+    background-color: #F7F7F7; /* Light gray background */
+    padding: 50px;
+    text-align: center;
+}
+
+#bio-icons {
+    margin-top: 20px;
+}
+
+#bio-icons i {
+    font-size: 2em;
+    margin: 0 10px;
+    color: #39CCCC; /* Teal blue for icons */
+}
+
+#bio, #projects, #contact {
+    padding: 80px 0;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-form-container {
+    display:flex;
+    justify-content: center;
+}
+
+#contact-form {
+    max-width: 600px;
+    width: 100%;
+}
+
+label {
+    display:block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10pxl
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    background-color: #39CCCC;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #001F3F;
+}
+
+#projects {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+}
+
+#bio h2, #projects h2, #contact h2 {
+    color: #001F3F;
+}
+
+article {
+    width: 30%; /* Adjust the width based on your preference */
+    background-color: #DDDDDD;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+aside {
+    background-color: #DDDDDD;
+    padding: 20px;
+}
+
+aside .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+aside a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #001F3F;
+    text-decoration: none;
+}
+
+aside a:hover::before {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #001F3F;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+aside a:hover::before {
+    opacity: 1;
+}
+
+
+h3 {
+    color: #001F3F; /* Deep navy blue for heading */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #39CCCC; /* Teal blue for link background */
+    color: #FFFFFF; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: #001F3F; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #001F3F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.hero-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-caption h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-caption p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF4136;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.hero-btn:hover {
+    background-color: #39CCCC;
+    color: #001F3F;
+}
