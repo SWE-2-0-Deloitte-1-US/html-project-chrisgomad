@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Christopher's personal webpage showcasing his Professional portfolio, biography, and contact information.">
+    <meta name="personal, webpage, Christophers website" content="Christopher's personal webpage showcasing his Professional portfolio, biography, and contact information.">
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/c740582a04.js" crossorigin="anonymous"></script>
     <title>Christopher's Webpage</title>
 </head>
 <body>
@@ -22,52 +23,73 @@
 
     <section id="home-page-section">
         <div id="home">
-            <img src="https://www.teahub.io/photos/full/271-2717219_motivational-wallpapers-without-quotes.jpg" alt="a man jumping over a small body of water during the sunset" class="home-image">
+            <img src="https://www.wallpapertip.com/wmimgs/83-838296_web-designer-professional-website-background-images.jpg" alt="an apple laptop on a wooden table with a glass cup and notebook" class="home-image">
             <div class="hero-caption">
-                <h1>Visual Design &amp; Art Director</h1>
-                <p>Hi, I am Chris, focusing on creating emotional experiences.</p>
-                <a href="#" class="hero-btn" tabindex="0">Hire Me</a>
+                <h1>Hi, I'm Christopher</h1>
+                <blockquote>
+                    "Live to be your best self every day"
+                </blockquote>
+                <a href="#contact" class="hero-btn" tabindex="0">Contact Me</a>
             </div>
-            <blockquote>
-                "Live to be your best self every day"
-            </blockquote>
         </div>
     </section>
 
     <section id="bio">
         <h2>About Me</h2>
-        <p>Your biography text here...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <div id="bio-icons">
+            <i class="fa fa-paint-brush"></i> <!-- Example icon, you can replace it with relevant icons -->
+            <i class="fa fa-code"></i>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <article>
+        <div class="projects-container">
+        <article onclick="window.location.href='https://github.com/chrisgomad'">
             <h3>Project Title 1</h3>
-            <p>Project description...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="https://github.com/yourproject1" class="project-link" target="_blank">GitHub Repository</a>
         </article>
-        <article>
+        <article onclick="window.location.href='https://github.com/chrisgomad'">
             <h3>Project Title 2</h3>
-            <p>Project description...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="https://github.com/yourproject1" class="project-link" target="_blank">GitHub Repository</a>
         </article>
-        <article>
+        <article onclick="window.location.href='https://github.com/chrisgomad'">
             <h3>Project Title 3</h3>
-            <p>Project description...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="https://github.com/yourproject1" class="project-link" target="_blank">GitHub Repository</a>
         </article>
+    </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>How to reach me...</p>
+        <div class="contact-form-container">
+            <form id="contact-form" action="#" method="post">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </section>
     </main>
 
     <aside>
-        <h3>Connect with Me</h3>
-        <ul>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/christopher-rodriguez-in/" target="_blank" class="icon-linkedin" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/chrisgomad" class="icon-github" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.kaggle.com/chrisgomad" class="icon-kaggle" target="_blank" title="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
+        </div>
     </aside>
 
     <footer>
